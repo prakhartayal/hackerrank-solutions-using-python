@@ -1,3 +1,5 @@
 s = input()
 for test in ("isalnum()","isalpha()","isdigit()","islower()","isupper()"):
-    print(any(eval("c."+test)for c in s))        // any() return True if any iterable is True else it returns False
+    print(any(eval("c."+test)for c in s))       
+    
+    // any() return True if any iterable is True else it returns False
