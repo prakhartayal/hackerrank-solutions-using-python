@@ -1,0 +1,21 @@
+import string
+def print_rangoli(size):
+    
+    s=string.ascii_lowercase      // It gives string of alphabet from a-z
+    l=[]                          // empty list
+    
+    for i in range(size):
+        t="-".join(s[i:size])
+        l.append(t[::-1]+t[1:])
+
+    width=len(l[0])
+
+    for i in range(size-1,0,-1):        
+        print(l[i].center(width,"-"))       // center function takes 2 argument
+    for i in range(0,size):
+        print(l[i].center(width,"-"))       // They return a string that is at least width characters wide
+
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
