@@ -1,0 +1,21 @@
+import numpy
+
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+
+print(numpy.inner(a,b))     // The numpy.inner() is a one-to-one multiplication of matrices then summation of numbers
+print(numpy.outer(a,b))     // The numpy.outer() is a one-to-many multiplication of matrices then it returns a 2-D arrray
+
+
+
+// Input
+
+a= 0 1
+b= 2 3
+
+// Output
+
+3   // numpy.inner()
+
+[[0 0]    //numpy.outer()
+ [2 3]]
