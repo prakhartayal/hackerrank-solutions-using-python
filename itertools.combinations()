@@ -1,0 +1,23 @@
+from itertools import combinations
+
+s,i=input().split()
+
+print(*["".join(x) for a in range(1,int(i)+1) for x in combinations(sorted(s),a)],sep="\n")  # join() is used to combine the values of tuples at each position and then separted by new line
+
+
+//Input
+
+HACK 2
+
+//Output
+
+A
+C
+H
+K
+AC
+AH
+AK
+CH
+CK
+HK
