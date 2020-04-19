@@ -10,7 +10,7 @@ def print_rangoli(size):
 
     width=len(l[0])
 
-    for i in range(size-1,0,-1):        
+    for i in range(size-1,0,-1):             // Search other fun() ljust() & rjust()      
         print(l[i].center(width,"-"))       // center function takes 2 argument
     for i in range(0,size):
         print(l[i].center(width,"-"))       // They return a string that is at least width characters wide
