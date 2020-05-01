@@ -1,0 +1,13 @@
+import numpy
+s=list(map(int,input().split()))
+
+
+
+print(numpy.zeros((s),dtype=int))
+
+#Default type is float ,so we use dtype to convert it into integer
+ # shape takes (3,3,3) first it tells that it is 3d matrix
+# then it tells no. of rows and columns
+
+
+print(numpy.ones((s),dtype=int))
