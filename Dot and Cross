@@ -1,0 +1,7 @@
+import numpy
+
+s=int(input())
+a1=numpy.array([list(map(int,input().split())) for i in range(s)])
+a2=numpy.array([list(map(int,input().split())) for i in range(s)])
+print(numpy.dot(a1,a2))
+
